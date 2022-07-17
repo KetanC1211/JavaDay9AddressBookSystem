@@ -3,12 +3,9 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 public class AddressBook {
-
-	public static void main(String[] args) {
-		System.out.println("Welcome to Address book Program");
-		String firstName,lastName,address,city,state,emailId,phoneNumber;
-		int zip;
-//		Taking details from User
+	String firstName,lastName,address,city,state,emailId,phoneNumber;
+	int zip;
+	void getDetails() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter first Name");
 		firstName = sc.nextLine();
@@ -27,14 +24,23 @@ public class AddressBook {
 		System.out.println("Enter Zip");
 		zip=sc.nextInt();
 		sc.close();
-//		Displaying User details
-		System.out.println(firstName+" "+lastName+" Details");
-		System.out.println("Address: "+address);
-		System.out.println("City: "+city);
-		System.out.println("State: "+state);
-		System.out.println("Zip: "+zip);
-		System.out.println("Phone Number: "+phoneNumber);
-		System.out.println("Email Id: "+emailId);
+		}
+
+	void display() {
+	System.out.println(firstName+" "+lastName+" Details");
+	System.out.println("Address: "+address);
+	System.out.println("City: "+city);
+	System.out.println("State: "+state);
+	System.out.println("Zip: "+zip);
+	System.out.println("Phone Number: "+phoneNumber);
+	System.out.println("Email Id: "+emailId);
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Welcome to Address book Program");
+		AddressBook Amit = new AddressBook();
+		Amit.getDetails();
+		Amit.display();
 	}
 
 }
