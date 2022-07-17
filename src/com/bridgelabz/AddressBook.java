@@ -66,7 +66,7 @@ public class AddressBook {
 		AddressBook Amit = new AddressBook();
 		Amit.getDetails();
 		Amit.display();
-//		Deleting Object details
+//		Deleting Contact details
 		Amit= null;
 		Amit.display();
 	}
