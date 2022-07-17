@@ -66,7 +66,8 @@ public class AddressBook {
 		AddressBook Amit = new AddressBook();
 		Amit.getDetails();
 		Amit.display();
-		Amit.ChangingPhoneNumber("9453857461");
+//		Deleting Object details
+		Amit= null;
 		Amit.display();
 	}
 }
