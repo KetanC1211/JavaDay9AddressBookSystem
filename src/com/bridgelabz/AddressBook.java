@@ -22,8 +22,8 @@ class AddressBook{
 		//trying to create Amit contact again
 		//throw an error, will not allow user to create contact of same person
 		//Comment out line 25 and 26 to resolve error
-		ContactBook Amit = new ContactBook();
-		Amit.getDetails();
+		// ContactBook Amit = new ContactBook();
+		// Amit.getDetails();
 	
 	}
 }
